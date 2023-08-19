@@ -1,0 +1,25 @@
+selecting data using Spring Jdbc
+
+public T queryForObject(String sql,RowMapper <T> rowMapper,Object args)
+
+public List<T> query(String sql,RowMapper<T> rowMapper)--> it is a select query
+
+RowMapper --> It is an interface . it converts result sets into object ,and we will get T object.
+
+
+Row Mapper :
+
+
+                           -----------------
+  ResultSet Object----->     Row Mapper    ---------> Class Object
+                           ------------------
+                                 |
+                                 |
+                                 |
+                                 
+                    Implementation of row mapper
+
+
+
+ in Class Object , if generic type is User , then it will create User object
+ "             "                      Employee                   Employee

@@ -1,0 +1,33 @@
+Spring is also the combination of multiple projects is not just one project which I'll be using.
+we have a support module for it if you want to work on web if you want to make a application.
+
+We have a separate module for it and of course one of our favorite.
+
+If you want to build REST application We have separate module .
+
+What if I say it's spring also can be used for security.
+
+If you want to Connect with database with the help of some JPA spring has a different module so spring is
+
+basically a collection of modules it has right and then will be going through most of this model.
+
+
+// maven dependency
+
+We can create a java project but there is one issue with this the issue is when you work with spring framework.
+
+We need to add a spring dependencies.
+
+Right.
+
+And when you say you want to add spring dependencies you have to go to Google.
+
+You have to search for all the dependencies which we need.
+
+And then you have to download it manually.
+
+But what if I say you can do that with the help of maven because MAVEN will help you here.
+
+So maven is basically a build tool which will help you to get dependencies which will help you create
+
+a package for your project which will help you to compile your codes as well.
