@@ -1,0 +1,96 @@
+**********************Spring MVC ************************
+
+SPRING MVC Application creation steps
+
+1. Configure the Dispatcher servlet in web.xml
+2. create Spring Configuration file
+3. configure view resolver
+4. Create Controller
+5. Create a view to show (Page)
+
+
+****** Sending data from controller to view *****
+
+1. Controller -----> Model   ----------> view(jsp)
+                     ModelAndview
+
+ 1) Model
+ 
+  addAttribute(String key, Object value) --> data add 
+                 String type    Object(Student,Collection,ArrayList,List)
+ 
+   using scriptlet tag -->
+   
+   JSP ---> HttpServletRequest  
+   Object ob = request.getAttribute("")
+        Object                           Key
+   
+ 2) ModelAndView 
+ 
+  addObject(String key, Object value) ) --> data add 
+  
+  
+  Controller -----> Model   ----------> view(jsp)
+                     ModelAndview
+                     
+                     
+  Data : Primitive Type value , Objects (Stduent,Person,Emp),
+         Collection(List,Set)
+         
+       /help    ---------------------> help.jsp
+      controller
+      
+      
+*****************  Sending data from View to Controller *********************** 
+               
+               
+            action = "/url"
+Before :     1)View    <------------------- Controller
+After :      2) Form.jsp (View) -------------------> Controller
+          
+              form.html
+              textfield
+              checkbox
+              radio button
+              button type--> submit
+                                             |-------------
+            view data ---------------------->|   data  
+                                             |---------------
+                                                 HttpServlet
+                                                 
+               //getParameter("name of field")
+               
+               Get : 1) @RequestParam ---> Each parameter value get
+                     2) @ModelAttribute ---> automatic all data from view
+                                              will get from class object
+                                              
+
+
+---------------------------------------------------------------
+@RequestMapping Annotation ---> request map (url with handler map)
+Defination :
+
+@RequestMapping annotation to map URLs such as /appointments onto an entire
+class or a particular handler method. Typically the class-level annotation maps a specific request
+path (or path pattern) onto a form controller, with additional method-level annotations narrowing the
+primary mapping for a specific HTTP method request method ("GET", "POST", etc.) or an HTTP request
+parameter condition.
+
+                                          
+           Methods -->
+           1) Get
+           2) Post
+           3) Delete
+           4) Put
+           
+            
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  
