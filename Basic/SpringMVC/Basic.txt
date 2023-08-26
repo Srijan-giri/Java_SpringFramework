@@ -85,12 +85,44 @@ parameter condition.
            
             
       
+ **********************Spring ORM with Spring MVC ****************
+ 
+                               
+                                 Service Layer            Database Layer
+                              
+                    |        |                 |          |            |           |
+ Contact Controller |----->  |  ServiceClass   |--------> | UserDao    |---------> |   DataBase
+                    |        |                 |          |            |           | 
+       *
+                                                                         _______________
+                                                                         |             |
+                                                                         |Entity Class |
+                                                                         |_____________|
       
-      
-      
-      
-      
-      
-      
-      
-  
+   
+   
+ ****************** How to redirect Spring MVC **********************
+ 
+ 0) HttpServletResponse
+ 
+ 
+ 1) Redirect Prefix
+ 
+ public String handler(){
+ 
+ return "redirect:/url";
+ 
+ }
+ 
+ 
+ 2) RedirectView       
+ 
+ public  RedirectView    handler(){
+ 
+    RedirectView r = new Redirectview();
+    r.setUrl("url"); or  r.setUrl("https://www.google.com");
+    return r;
+ 
+ }           
+ 
+                                                         *

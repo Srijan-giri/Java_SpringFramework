@@ -1,0 +1,18 @@
+@PathVariable annotation is used to bind method parameter to URL templete
+variable.
+
+it is commonly used in REST application
+
+
+
+https:// localhost:8080/project/34
+                         ________|
+                         |       
+@RequestMapping("/book/{id}")
+                         |____________
+                                      |   
+public String handler(@PathVariable("id") int id)
+{
+
+
+}

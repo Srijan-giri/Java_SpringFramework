@@ -4,13 +4,19 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>About Page</title>
 </head>
 <body>
-  <h1>This is about page</h1>
-  <h2>Learn Code With Durgesh</h2>
-  <h2>Subscribe to my channel </h2>
-  
-  
+<%
+  String name = (String)request.getAttribute("name");
+  String stream = (String)request.getAttribute("stream");
+  String semester = (String)request.getAttribute("SEM");
+  String job = (String)request.getAttribute("job");
+%>
+  <h1>Personal Details</h1>
+  <h3>Name = <%=name %></h3>
+  <h3>Stream = <%=stream %></h3>
+  <h3>Semester = <%=semester %></h3>
+  <h3>Job = <%=job %></h3>
 </body>
 </html>

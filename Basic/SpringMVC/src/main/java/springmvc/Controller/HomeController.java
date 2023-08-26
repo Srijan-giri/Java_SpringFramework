@@ -25,7 +25,7 @@ public class HomeController {
 		model.addAttribute("name","Srijan Giri");
 		model.addAttribute("id",1421);
 		
-		List<String> friends = new ArrayList<>();
+		List<String> friends = new ArrayList<String>();
 		friends.add("Aman");
 		friends.add("Asim");
 		friends.add("Mukul");
